@@ -1,1 +1,4 @@
-//geen idee wat hier in moet
+node_modules
+.idea
+*.iml
+npm_debug.log*
