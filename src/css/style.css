@@ -1,0 +1,7 @@
+#myCanvas{
+    width: 1280px;
+    heigh: 720px;
+    /*margin-top: 125px;*/
+    /*margin-left: 285px;*/
+    border: 1px solid black;
+}
