@@ -1,14 +1,17 @@
 class KeyView{
     constructor(){
+        console.log("Keyview");
         this.left = false;
         this.right = false;
         this.up = false;
         this.down = false;
         this.space = false;
 
+        //Key down event
         document.addEventListener("keyDown", (keyDown)=>{
             if(keyDown.keyCode == 37){
                 this.left = true;
+                console.log("test");
             }
             else if(keyDown.keyCode == 39){
                 this.right = true;
@@ -24,6 +27,7 @@ class KeyView{
             };
         });
 
+        //Key up event
         document.addEventListener("keyUp", (keyUp)=>{
             if(keyUp.keyCode == 37){
                 this.left = false;
@@ -43,6 +47,7 @@ class KeyView{
         });
     };
 
+    //Get keys function
     getKeys(){
         return{
             left: this.left,
@@ -52,7 +57,6 @@ class KeyView{
             space: this.space
         };
     };
-
 };
 
-export {KeyView};
+module.exports = KeyView;

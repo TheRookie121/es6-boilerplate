@@ -6,8 +6,10 @@ class Player{
         this.speed = 5;
     };
 
+    //Player move function
     move(keys){
-        console.log(keys);
+        console.log("moveParams", keys);
+        console.log("moveParamLeft", keys.left);
         if(keys.left){
             this.position.x += this.speed;
         }
